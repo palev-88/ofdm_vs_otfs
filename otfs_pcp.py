@@ -9,6 +9,12 @@ power in L samples for high per-sample SNR.
 TX: DD grid with ZC+CP pilot → IDFT along Doppler → CP per subsymbol
 RX: CP removal → ZC correlation (Stage 1) → BEM smoothing (Stage 2) → FDE
 """
+
+__author__    = "Panos N. Alevizos"
+__email__     = "bigpan27@gmail.com"
+__credits__   = ["Panos N. Alevizos", "Claude Code (Anthropic)"]
+__license__   = "CC-BY-4.0"
+__copyright__ = "(c) 2026 Panos N. Alevizos"
 import numpy as np
 from dataclasses import dataclass
 from scipy import sparse
@@ -107,7 +113,7 @@ class PCPOTFSTransceiver:
             tx_sig[n * MT + cfg.Mcp: (n + 1) * MT] = x_n
         return tx_sig, D
 
-    def rx(self, rx_signal, noise_var):
+    def rx(self, rx_signal, noise_var):  # noise_var unused — rx() self-estimates from CP redundancy; kept for call-site compatibility
         cfg = self.cfg
         M, N, MT, L = cfg.M, cfg.N, cfg.MT, cfg.L
         Y = np.zeros((M, N), dtype=complex)

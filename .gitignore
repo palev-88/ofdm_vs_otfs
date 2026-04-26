@@ -1,0 +1,55 @@
+# ═══════════════════════════════════════════════════════════════
+# Working dirs and agent artifacts (never commit)
+# ═══════════════════════════════════════════════════════════════
+.claude/
+plan/
+recovered/
+recovered_report/
+sandbox/
+report/
+report_restored_*/
+otfs_papers/
+results/
+
+# ═══════════════════════════════════════════════════════════════
+# Working / planning docs (kept on disk, not committed)
+# ═══════════════════════════════════════════════════════════════
+CLAUDE.md
+REPORT_FINAL_PLAN.md
+RESTORATION_SUMMARY.md
+
+# ═══════════════════════════════════════════════════════════════
+# Pipeline scripts retained on disk but not committed
+# ═══════════════════════════════════════════════════════════════
+run_single.py
+run_fast.py
+run_all.sh
+
+# ═══════════════════════════════════════════════════════════════
+# Python caches
+# ═══════════════════════════════════════════════════════════════
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# ═══════════════════════════════════════════════════════════════
+# LaTeX aux + binary build artifacts
+# ═══════════════════════════════════════════════════════════════
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.pdf
+*.fdb_latexmk
+*.fls
+
+# ═══════════════════════════════════════════════════════════════
+# OS / editor cruft
+# ═══════════════════════════════════════════════════════════════
+.DS_Store
+Thumbs.db
+*.swp
+*.swo

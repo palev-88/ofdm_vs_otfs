@@ -14,6 +14,12 @@ References:
     3GPP TS 38.141-1 §G.2 (simplified profiles for conformance)
 """
 
+__author__    = "Panos N. Alevizos"
+__email__     = "bigpan27@gmail.com"
+__credits__   = ["Panos N. Alevizos", "Claude Code (Anthropic)"]
+__license__   = "CC-BY-4.0"
+__copyright__ = "(c) 2026 Panos N. Alevizos"
+
 import numpy as np
 from dataclasses import dataclass, field
 from typing import Optional, Tuple
@@ -117,6 +123,7 @@ class TDLChannelConfig:
     f_doppler: float = 100.0        # Maximum Doppler frequency [Hz]
     sample_rate: float = 10e6       # Sample rate [Hz]
     seed: Optional[int] = None      # Random seed for reproducibility
+    use_fdf: bool = True            # Use fractional delay filter (Farrow structure)
 
 
 class TDLChannel:
@@ -142,8 +149,16 @@ class TDLChannel:
         # Scale delays by desired delay spread
         # TR 38.901 §7.7.3: τ_scaled = τ_normalized × DS_desired
         self.delays_s = profile['delays_norm'] * cfg.delay_spread
-        self.delays_samples = np.round(self.delays_s * cfg.sample_rate).astype(int)
+        self.delays_samples_frac = self.delays_s * cfg.sample_rate  # exact fractional
+        self.delays_samples = np.round(self.delays_samples_frac).astype(int)
         self.max_delay_samples = int(np.max(self.delays_samples))
+
+        # Fractional delay filter (Farrow structure) — optional
+        self._fdf = None
+        if cfg.use_fdf and np.max(self.delays_samples_frac) > 0:
+            from fdf import FractionalDelayFilter
+            self._fdf = FractionalDelayFilter(filter_order=8)
+            self._fdf.init(self.delays_samples_frac)
         
         # Convert powers from dB to linear, normalize to unit total power
         powers_lin = 10 ** (profile['powers_dB'] / 10)
@@ -248,12 +263,19 @@ class TDLChannel:
         
         # Apply TDL: r(t) = Σ αᵢ(t) · x(t - τᵢ)
         rx_signal = np.zeros(N, dtype=complex)
-        for i in range(self.n_taps):
-            delay = self.delays_samples[i]
-            if delay == 0:
-                rx_signal += fading[i, :] * tx_signal
-            elif delay < N:
-                rx_signal[delay:] += fading[i, delay:] * tx_signal[:N - delay]
+        if self._fdf is not None:
+            # Fractional delay filter path — sub-sample accuracy
+            delayed = self._fdf.apply(tx_signal)  # (N+tail, n_taps)
+            for i in range(self.n_taps):
+                col = delayed[:N, i] if delayed.shape[0] >= N else np.pad(delayed[:, i], (0, N - delayed.shape[0]))
+                rx_signal += fading[i, :] * col
+        else:
+            for i in range(self.n_taps):
+                delay = self.delays_samples[i]
+                if delay == 0:
+                    rx_signal += fading[i, :] * tx_signal
+                elif delay < N:
+                    rx_signal[delay:] += fading[i, delay:] * tx_signal[:N - delay]
         
         # Add AWGN
         if snr_dB is not None:

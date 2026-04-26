@@ -17,6 +17,12 @@ Note: Perfect-CSI detector retained for upper-bound plots in report.
 Future: PAPR/ACPR measurement requires oversampled pulse-shaped waveform.
 """
 
+__author__    = "Panos N. Alevizos"
+__email__     = "bigpan27@gmail.com"
+__credits__   = ["Panos N. Alevizos", "Claude Code (Anthropic)"]
+__license__   = "CC-BY-4.0"
+__copyright__ = "(c) 2026 Panos N. Alevizos"
+
 import numpy as np
 from scipy import sparse
 from scipy.sparse.linalg import spsolve
@@ -109,13 +115,37 @@ class ZPOTFSTransceiver:
     # RX: Zak Transform + Channel Estimation + LMMSE
     # ═══════════════════════════════════════════════════════════
 
-    def rx(self, rx_signal, noise_var, detector='lmmse_est'):
+    def _estimate_noise_blind(self, rx_signal):
+        """
+        Blind noise pre-estimate from the last 2 ZP samples of each subsymbol.
+
+        The last 2 ZP samples are always beyond the maximum channel delay
+        (zp_len ≥ max_delay by construction), so they contain pure noise.
+        This estimate is used to regularize channel estimation before the
+        ZP-tail full noise estimator can run.
+        """
+        cfg = self.cfg
+        M, N, Meff = cfg.M, cfg.N, cfg.Meff
+        samples = []
+        for n in range(N):
+            end = n * Meff + Meff
+            start = end - 2
+            if start >= 0 and end <= len(rx_signal):
+                samples.append(rx_signal[start:end])
+        if samples:
+            return max(float(np.mean(np.abs(np.concatenate(samples)) ** 2)), 1e-10)
+        return 0.01
+
+    def rx(self, rx_signal, noise_var, detector='lmmse_est'):  # noise_var unused — self-estimated from ZP tails
         """
         RX pipeline.
 
         Detectors:
           'lmmse_est': DD estimation + time-domain sparse LMMSE
           'lmmse_true': True CSI (requires fading coefficients)
+
+        Note: noise_var is ignored — rx() self-estimates noise from ZP tails.
+        Kept for API compatibility (run_eval passes nv positionally).
 
         Returns: (data_symbols, dd_channel_est, dd_rx)
         """
@@ -129,10 +159,14 @@ class ZPOTFSTransceiver:
 
         Y_dd = np.fft.fft(y_dt, axis=1) / np.sqrt(N)
 
-        # Channel estimation
-        taps_dd = self._estimate_channel_dd(Y_dd, noise_var)
+        # Blind noise pre-estimate (last 2 ZP samples — always beyond channel)
+        # Used only as regularizer for channel estimation; not the final noise_var.
+        noise_pre = self._estimate_noise_blind(rx_signal)
 
-        # Noise estimation from ZP tail
+        # Channel estimation — uses noise_pre (not caller's noise_var)
+        taps_dd = self._estimate_channel_dd(Y_dd, noise_pre)
+
+        # Noise estimation from ZP tail (uses estimated channel length)
         noise_est = self._estimate_noise(rx_signal, taps_dd)
 
         if detector == 'lmmse_est':
@@ -320,8 +354,17 @@ class ZPOTFSTransceiver:
 
         y = rx_signal[:NM]
         GH = G.conj().T
-        A = (GH @ G + noise_var * sparse.eye(NM)).tocsc()
-        x_hat = spsolve(A, GH @ y)
+        # Floor regularization to avoid singular matrix at noise_var → 0
+        reg = max(noise_var, 1e-6)
+        A = (GH @ G + reg * sparse.eye(NM)).tocsc()
+        try:
+            x_hat = spsolve(A, GH @ y)
+            if np.any(np.isnan(x_hat)):
+                raise ValueError("NaN in solve")
+        except Exception:
+            # Fallback: use heavier regularization
+            A = (GH @ G + 1e-3 * sparse.eye(NM)).tocsc()
+            x_hat = spsolve(A, GH @ y)
 
         # Convert to DD domain
         x_dt = np.zeros((cfg.M, cfg.N), dtype=complex)

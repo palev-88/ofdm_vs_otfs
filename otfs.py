@@ -8,6 +8,12 @@ Key changes from v3:
   - Parabolic interpolation for fractional Doppler
 """
 
+__author__    = "Panos N. Alevizos"
+__email__     = "bigpan27@gmail.com"
+__credits__   = ["Panos N. Alevizos", "Claude Code (Anthropic)"]
+__license__   = "CC-BY-4.0"
+__copyright__ = "(c) 2026 Panos N. Alevizos"
+
 import numpy as np
 from dataclasses import dataclass
 from typing import Tuple
