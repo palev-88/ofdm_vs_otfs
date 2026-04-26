@@ -208,6 +208,53 @@ Also prints PAPR@0.01 % and ACLR numbers per method to stdout.
 
 ---
 
+## Plot the report's figures directly (no eval needed)
+
+The repository ships with the **report-grade evaluation results** committed
+under `results/`:
+
+```
+results/otfs_eval_v1.json                    274 KB  (full BER hypercube)
+results/figures/tab_eval_BERat20dB.csv       5.3 KB
+results/figures/tab_eval_SNRforBER.csv       3.8 KB
+results/figures/tab_eval_winner.csv          5.3 KB
+```
+
+These are the outputs of an `NMC = 200` sweep over the full
+2 BW × 6 method × 5 channel × 11 Doppler × 13 SNR grid (~17 hours wall-clock)
+and back every BER number quoted in the technical report. To regenerate the
+report's figures **without re-running the simulation**, just plot:
+
+```powershell
+cd C:\path\to\ofdm_vs_otfs
+python plot_results.py
+```
+
+That single command (~5–15 sec) produces six PNGs and three CSVs in
+`results/figures/`:
+
+| File | Description |
+|---|---|
+| `fig_eval_AWGN.png`           | NB + WB AWGN waterfall (calibration anchor) |
+| `fig_eval_BERvsSNR_NB.png`    | 4 channels × 4 Dopplers grid, narrowband |
+| `fig_eval_BERvsSNR_WB.png`    | same grid, wideband |
+| `fig_eval_BERvsFD_NB.png`     | BER vs Doppler at SNR ∈ {20, 30} dB, NB |
+| `fig_eval_BERvsFD_WB.png`     | same, WB |
+| `fig_eval_winner_heatmap.png` | per-cell winner, NB \| WB |
+| `tab_eval_BERat20dB.csv`      | re-emitted (overwritten with same content) |
+| `tab_eval_SNRforBER.csv`      | re-emitted |
+| `tab_eval_winner.csv`         | re-emitted |
+
+For the matching TX-waveform figures (PSD + PAPR), one more command:
+
+```powershell
+python tx_spectrum_papr.py
+```
+
+(~30–60 sec, writes 4 more PNGs and prints PAPR/ACLR numbers to stdout.)
+
+---
+
 ## End-to-end reproduction recipe
 
 To regenerate every report figure from scratch (overnight job):

@@ -9,7 +9,18 @@ sandbox/
 report/
 report_restored_*/
 otfs_papers/
-results/
+
+# results/ — ignore everything by default (BER JSONs, figure PNGs, etc.)
+# but commit the report-grade eval digests so anyone cloning the repo can
+# reproduce the report's figures with `python plot_results.py` (no need to
+# re-run the 9-17 hour NMC=200 sweep).
+results/*
+!results/otfs_eval_v1.json
+!results/figures/
+results/figures/*
+!results/figures/tab_eval_BERat20dB.csv
+!results/figures/tab_eval_SNRforBER.csv
+!results/figures/tab_eval_winner.csv
 
 # ═══════════════════════════════════════════════════════════════
 # Working / planning docs (kept on disk, not committed)
