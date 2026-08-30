@@ -6,6 +6,10 @@ waveform characterisation.  This is the code behind the technical report
 *"OFDM vs OTFS Waveform Comparison"* — every curve and table in the report is
 reproducible from this repository.
 
+**Report:** [doi:10.5281/zenodo.22181187](https://doi.org/10.5281/zenodo.22181187)
+(v4.0, August 2026).  The code that produced it is tagged
+[`v4.0`](https://github.com/palev-88/ofdm_vs_otfs/tree/v4.0).
+
 ## Repository layout
 
 ```text
