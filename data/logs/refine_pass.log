@@ -1,0 +1,8 @@
+NB: refining [('TDL-B', 800.0, [9.0, 10.0, 11.0]), ('TDL-C', 400.0, [10.0, 11.0])]
+    NB TDL-B fD=800: +3 pts (105s)
+    NB TDL-C fD=400: +2 pts (176s)
+NB: merged
+WB: refining [('TDL-B', 400.0, [9.0, 10.0, 11.0]), ('TDL-B', 800.0, [9.0, 10.0, 11.0])]
+    WB TDL-B fD=400: +3 pts (238s)
+    WB TDL-B fD=800: +3 pts (481s)
+WB: merged

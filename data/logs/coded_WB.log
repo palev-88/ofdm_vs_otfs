@@ -1,0 +1,12 @@
+
+=== WB: M=1024 n_act=624 SCS=60k Fs=61.44M CP=72 ZP=99 cp_g=40 cp_o=44
+    OFDM       dataRE=  8112 g_sig=1.000 g_noise=1.001
+    OFDM-TD    dataRE=  8112 g_sig=1.000 g_noise=0.992
+    PCP-guard  dataRE=  7370 g_sig=0.941 g_noise=0.585
+    PCP-orig   dataRE=  7358 g_sig=0.940 g_noise=0.584
+    iso-block n_common=7358 A=7358 E=14716 | LDPC BG1 Z=352 C=1
+    pool: 8 workers
+  WB AWGN fD=     0  knees[3.4  0.5  0.5  0.5]  fine=10pts frames=400  (219s)
+  WB TDL-A fD=     0  knees[12.0  9.0  12.0  12.1]  fine=10pts frames=400  (150s)
+  WB TDL-A fD=   200  knees[9.0  7.9  10.5  10.5]  fine=10pts frames=400  (190s)
+  WB TDL-A fD=   400  knees[7.9  6.3  9.2  9.2]  fine=10pts frames=400  (216s)

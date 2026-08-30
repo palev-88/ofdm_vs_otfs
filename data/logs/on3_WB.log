@@ -1,0 +1,22 @@
+
+=== WB: M=1024 n_act=624 SCS=60k Fs=61.44M CP=72 ZP=99 cp_g=40 cp_o=44
+    OFDM       dataRE=  8112 g_sig=1.000 g_noise=0.997
+    PCP-guard  dataRE=  7370 g_sig=1.000 g_noise=0.609
+    PCP-orig   dataRE=  7358 g_sig=1.000 g_noise=0.611
+    iso-block n_common=7358 A=7358 E=14716 | LDPC BG1 Z=352 C=1
+    pool: 8 workers
+  WB AWGN fD=     0  knees[0.5  0.5  0.5]  fine=6pts frames=224  (63s)
+  WB TDL-A fD=     0  knees[9.0  12.0  12.1]  fine=7pts frames=2000  (346s)
+  WB TDL-A fD=   200  knees[7.9  10.5  10.5]  fine=8pts frames=2000  (451s)
+  WB TDL-A fD=   400  knees[6.3  9.0  9.0]  fine=8pts frames=2000  (511s)
+  WB TDL-A fD=   600  knees[6.1  9.0  9.0]  fine=8pts frames=2000  (537s)
+  WB TDL-A fD=   800  knees[9.1  12.0  12.0]  fine=7pts frames=2000  (427s)
+  WB TDL-A fD=  1000  knees[9.0  10.9  10.9]  fine=6pts frames=2000  (397s)
+  WB TDL-B fD=     0  knees[5.2  6.3  6.3]  fine=8pts frames=2000  (488s)
+  WB TDL-B fD=   200  knees[6.2  9.0  9.1]  fine=8pts frames=2000  (468s)
+  WB TDL-B fD=   400  knees[6.1  6.3  6.3]  fine=9pts frames=2000  (547s)
+  WB TDL-B fD=   600  knees[5.1  9.0  9.0]  fine=7pts frames=2000  (558s)
+  WB TDL-B fD=   800  knees[5.2  8.2  6.4]  fine=8pts frames=2000  (1135s)
+  WB TDL-B fD=  1000  knees[6.0  9.1  9.1]  fine=8pts frames=2000  (1306s)
+  WB TDL-C fD=     0  knees[7.9  9.2  10.7]  fine=8pts frames=2000  (926s)
+  WB TDL-C fD=   200  knees[8.1  12.0  11.1]  fine=7pts frames=2000  (1102s)

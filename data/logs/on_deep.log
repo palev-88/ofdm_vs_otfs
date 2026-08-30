@@ -1,0 +1,40 @@
+
+=== NB: M=256 n_act=156 SCS=30k Fs=7.68M CP=18 ZP=14 cp_g=8 cp_o=11
+    OFDM       dataRE=  2028 g_sig=1.000 g_noise=1.003
+    PCP-guard  dataRE=  1850 g_sig=1.000 g_noise=0.606
+    PCP-orig   dataRE=  1841 g_sig=1.000 g_noise=0.609
+    iso-block n_common=1841 A=1841 E=3682 | LDPC BG2 Z=192 C=1
+  NB AWGN fD=0: +4 pts x 2000 frames (144s)
+  NB TDL-A fD=0: +2 pts x 2000 frames (220s)
+  NB TDL-A fD=600: +1 pts x 2000 frames (282s)
+  NB TDL-A fD=1000: +2 pts x 2000 frames (392s)
+  NB TDL-B fD=0: +5 pts x 2000 frames (547s)
+  NB TDL-B fD=600: +7 pts x 2000 frames (795s)
+  NB TDL-B fD=1000: +5 pts x 2000 frames (1034s)
+  NB TDL-C fD=0: +6 pts x 2000 frames (1204s)
+  NB TDL-C fD=600: +6 pts x 2000 frames (1380s)
+  NB TDL-C fD=1000: +4 pts x 2000 frames (1510s)
+  NB TDL-D fD=0: +4 pts x 2000 frames (1609s)
+  NB TDL-D fD=600: +4 pts x 2000 frames (1705s)
+  NB TDL-D fD=1000: +5 pts x 2000 frames (1824s)
+merged into final_NB.json
+
+=== WB: M=1024 n_act=624 SCS=60k Fs=61.44M CP=72 ZP=99 cp_g=40 cp_o=44
+    OFDM       dataRE=  8112 g_sig=1.000 g_noise=0.997
+    PCP-guard  dataRE=  7370 g_sig=1.000 g_noise=0.609
+    PCP-orig   dataRE=  7358 g_sig=1.000 g_noise=0.611
+    iso-block n_common=7358 A=7358 E=14716 | LDPC BG1 Z=352 C=1
+  WB AWGN fD=0: +4 pts x 2000 frames (203s)
+  WB TDL-A fD=0: +2 pts x 2000 frames (334s)
+  WB TDL-A fD=600: +5 pts x 2000 frames (732s)
+  WB TDL-A fD=1000: nothing to add
+  WB TDL-B fD=0: +4 pts x 2000 frames (969s)
+  WB TDL-B fD=600: +3 pts x 2000 frames (1220s)
+  WB TDL-B fD=1000: +3 pts x 2000 frames (1447s)
+  WB TDL-C fD=0: +3 pts x 2000 frames (1610s)
+  WB TDL-C fD=600: +8 pts x 2000 frames (2143s)
+  WB TDL-C fD=1000: +6 pts x 2000 frames (2579s)
+  WB TDL-D fD=0: +4 pts x 2000 frames (2762s)
+  WB TDL-D fD=600: +3 pts x 2000 frames (2942s)
+  WB TDL-D fD=1000: nothing to add
+merged into final_WB.json

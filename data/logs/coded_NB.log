@@ -1,0 +1,97 @@
+
+=== NB: M=256 n_act=156 SCS=30k Fs=7.68M CP=18 ZP=14 cp_g=8 cp_o=11
+    OFDM       dataRE=  2028 g_sig=1.000 g_noise=1.013
+    OFDM-TD    dataRE=  2028 g_sig=1.000 g_noise=1.009
+    PCP-guard  dataRE=  1850 g_sig=0.939 g_noise=0.585
+    PCP-orig   dataRE=  1841 g_sig=0.939 g_noise=0.580
+    iso-block n_common=1841 A=1841 E=3682 | LDPC BG2 Z=192 C=1
+    pool: 8 workers
+  NB AWGN fD=     0  knees[3.4  0.5  0.5  0.5]  fine=10pts frames=400  (138s)
+  NB TDL-A fD=     0  knees[15.0  13.1  13.1  15.0]  fine=10pts frames=400  (82s)
+  NB TDL-A fD=   200  knees[10.1  9.0  12.0  12.0]  fine=10pts frames=400  (115s)
+  NB TDL-A fD=   400  knees[12.0  10.1  12.0  12.0]  fine=10pts frames=400  (117s)
+  NB TDL-A fD=   600  knees[10.1  9.0  12.0  12.0]  fine=10pts frames=400  (137s)
+  NB TDL-A fD=   800  knees[12.0  10.5]  fine=10pts frames=400  (139s)
+  NB TDL-A fD=  1000  knees[16.1  12.0]  fine=10pts frames=400  (127s)
+  NB TDL-B fD=     0  knees[9.0  7.5  9.0  9.0]  fine=10pts frames=400  (118s)
+  NB TDL-B fD=   200  knees[8.1  7.7  8.0  8.0]  fine=10pts frames=400  (143s)
+  NB TDL-B fD=   400  knees[9.1  7.8  9.1  9.2]  fine=10pts frames=400  (128s)
+  NB TDL-B fD=   600  knees[6.2  6.2  7.7  9.0]  fine=10pts frames=400  (154s)
+  NB TDL-B fD=   800  knees[10.7  6.2  15.0]  fine=10pts frames=400  (126s)
+  NB TDL-B fD=  1000  knees[12.0  9.0  12.0  13.5]  fine=10pts frames=400  (132s)
+  NB TDL-C fD=     0  knees[8.1  6.3  9.2  8.0]  fine=10pts frames=400  (121s)
+  NB TDL-C fD=   200  knees[9.2  7.8  15.0  10.1]  fine=10pts frames=400  (120s)
+  NB TDL-C fD=   400  knees[8.0  6.0  9.2  6.3]  fine=10pts frames=400  (145s)
+  NB TDL-C fD=   600  knees[9.1  6.0  9.0  7.5]  fine=10pts frames=400  (154s)
+  NB TDL-C fD=   800  knees[12.0  9.1  15.0]  fine=10pts frames=400  (137s)
+  NB TDL-C fD=  1000  knees[12.0  9.0  15.0]  fine=10pts frames=400  (127s)
+  NB TDL-D fD=     0  knees[6.1  4.9  3.3  3.3]  fine=10pts frames=400  (104s)
+  NB TDL-D fD=   200  knees[6.1  6.0  5.1  6.0]  fine=10pts frames=400  (101s)
+  NB TDL-D fD=   400  knees[6.1  6.0  6.1  6.1]  fine=10pts frames=400  (112s)
+  NB TDL-D fD=   600  knees[6.2  6.0  7.5  10.1]  fine=10pts frames=400  (109s)
+  NB TDL-D fD=   800  knees[6.2  3.4  6.2  7.7]  fine=10pts frames=400  (120s)
+  NB TDL-D fD=  1000  knees[7.9  6.0  6.2  9.0]  fine=10pts frames=400  (78s)
+
+--- NB: SNR (dB) for BLER targets ---
+  target BLER=10%           OFDM     OFDM-TD   PCP-guard    PCP-orig
+    AWGN fD=     0         3.38        1.87        1.61        1.64
+  target BLER=1%           OFDM     OFDM-TD   PCP-guard    PCP-orig
+    AWGN fD=     0         3.52        2.26        1.79        1.81
+  target BLER=10%           OFDM     OFDM-TD   PCP-guard    PCP-orig
+    TDL-A fD=     0        11.70        9.95       11.15       11.05
+    TDL-A fD=   200        11.90       10.31       11.82       11.81
+    TDL-A fD=   400        12.38       10.73        >max        >max
+    TDL-A fD=   600         >max       10.64        >max        >max
+    TDL-A fD=   800         >max       10.00        >max        >max
+    TDL-A fD=  1000         >max       10.07        >max        >max
+  target BLER=1%           OFDM     OFDM-TD   PCP-guard    PCP-orig
+    TDL-A fD=     0         >max        >max        >max        >max
+    TDL-A fD=   200         >max        >max        >max        >max
+    TDL-A fD=   400         >max        >max        >max        >max
+    TDL-A fD=   600         >max        >max        >max        >max
+    TDL-A fD=   800         >max        >max        >max        >max
+    TDL-A fD=  1000         >max       16.10        >max        >max
+  target BLER=10%           OFDM     OFDM-TD   PCP-guard    PCP-orig
+    TDL-B fD=     0        10.36        8.80       10.06        9.88
+    TDL-B fD=   200        10.46        8.85       10.47       10.21
+    TDL-B fD=   400         9.98        8.50       10.46       10.51
+    TDL-B fD=   600        11.01        8.44        >max        >max
+    TDL-B fD=   800        13.28        8.29       13.87       14.83
+    TDL-B fD=  1000         >max        8.76        >max        >max
+  target BLER=1%           OFDM     OFDM-TD   PCP-guard    PCP-orig
+    TDL-B fD=     0         >max        >max        >max        >max
+    TDL-B fD=   200         >max        >max        >max        >max
+    TDL-B fD=   400         >max       12.00        >max        >max
+    TDL-B fD=   600         >max        >max        >max        >max
+    TDL-B fD=   800         >max       11.44        >max        >max
+    TDL-B fD=  1000         >max       13.00        >max        >max
+  target BLER=10%           OFDM     OFDM-TD   PCP-guard    PCP-orig
+    TDL-C fD=     0         9.00        7.55       10.72        8.90
+    TDL-C fD=   200         9.59        8.22       12.51        9.90
+    TDL-C fD=   400         9.00        7.31       11.49        9.35
+    TDL-C fD=   600        10.37        8.00        >max       10.45
+    TDL-C fD=   800        12.64        7.65        >max       12.20
+    TDL-C fD=  1000        13.24        8.18        >max       13.31
+  target BLER=1%           OFDM     OFDM-TD   PCP-guard    PCP-orig
+    TDL-C fD=     0        12.00       11.09        >max        >max
+    TDL-C fD=   200        12.30       12.00        >max       15.00
+    TDL-C fD=   400         >max       10.79        >max        >max
+    TDL-C fD=   600         >max       10.42        >max        >max
+    TDL-C fD=   800         >max       10.36        >max        >max
+    TDL-C fD=  1000         >max       11.14        >max        >max
+  target BLER=10%           OFDM     OFDM-TD   PCP-guard    PCP-orig
+    TDL-D fD=     0         6.30        5.03        4.60        4.94
+    TDL-D fD=   200         7.24        5.75        5.80        5.87
+    TDL-D fD=   400         6.80        5.31        5.95        6.07
+    TDL-D fD=   600         6.95        5.67        7.20        7.50
+    TDL-D fD=   800         8.00        6.29        8.99       10.53
+    TDL-D fD=  1000         8.38        6.40        7.48        8.90
+  target BLER=1%           OFDM     OFDM-TD   PCP-guard    PCP-orig
+    TDL-D fD=     0        10.45        8.00        8.00        8.00
+    TDL-D fD=   200         >max        >max        >max        >max
+    TDL-D fD=   400        11.38        9.15       12.00       12.00
+    TDL-D fD=   600        12.00        9.13        >max        >max
+    TDL-D fD=   800         >max        8.42        >max        >max
+    TDL-D fD=  1000         >max        9.42        >max        >max
+
+wrote coded_NB.json   total 3084s

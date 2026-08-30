@@ -1,0 +1,48 @@
+NB: 11 cells to fill:
+    TDL-A fD=0: worst deep BLER 0.034 -> add [17.0, 18.0]
+    TDL-A fD=600: worst deep BLER 0.165 -> add [15.0, 16.0]
+    TDL-A fD=1000: worst deep BLER 0.256 -> add [15.0, 16.0]
+    TDL-B fD=0: worst deep BLER 0.029 -> add [14.5, 15.5]
+    TDL-B fD=600: worst deep BLER 0.071 -> add [16.5, 17.5]
+    TDL-B fD=1000: worst deep BLER 0.170 -> add [16.0, 17.0]
+    TDL-C fD=0: worst deep BLER 0.044 -> add [14.5, 15.5]
+    TDL-C fD=600: worst deep BLER 0.081 -> add [15.5, 16.5]
+    TDL-C fD=1000: worst deep BLER 0.099 -> add [19.0, 20.0]
+    TDL-D fD=600: worst deep BLER 0.030 -> add [13.0, 14.0]
+    TDL-D fD=1000: worst deep BLER 0.095 -> add [14.5, 15.5]
+    NB TDL-A fD=0: +2 pts (36s)
+    NB TDL-A fD=600: +2 pts (106s)
+    NB TDL-A fD=1000: +2 pts (187s)
+    NB TDL-B fD=0: +2 pts (222s)
+    NB TDL-B fD=600: +2 pts (283s)
+    NB TDL-B fD=1000: +2 pts (363s)
+    NB TDL-C fD=0: +2 pts (403s)
+    NB TDL-C fD=600: +2 pts (477s)
+    NB TDL-C fD=1000: +2 pts (551s)
+    NB TDL-D fD=600: +2 pts (612s)
+    NB TDL-D fD=1000: +2 pts (675s)
+NB: merged
+WB: 11 cells to fill:
+    TDL-A fD=0: worst deep BLER 0.021 -> add [16.0, 17.0]
+    TDL-A fD=600: worst deep BLER 0.051 -> add [18.0, 19.0]
+    TDL-A fD=1000: worst deep BLER 0.188 -> add [15.0, 16.0]
+    TDL-B fD=0: worst deep BLER 0.007 -> add [13.0]
+    TDL-B fD=600: worst deep BLER 0.013 -> add [14.0]
+    TDL-B fD=1000: worst deep BLER 0.026 -> add [15.0, 16.0]
+    TDL-C fD=0: worst deep BLER 0.009 -> add [15.0]
+    TDL-C fD=600: worst deep BLER 0.033 -> add [16.5, 17.5]
+    TDL-C fD=1000: worst deep BLER 0.056 -> add [18.0, 19.0]
+    TDL-D fD=600: worst deep BLER 0.010 -> add [13.0]
+    TDL-D fD=1000: worst deep BLER 0.033 -> add [13.0, 14.0]
+    WB TDL-A fD=0: +2 pts (138s)
+    WB TDL-A fD=600: +2 pts (339s)
+    WB TDL-A fD=1000: +2 pts (546s)
+    WB TDL-B fD=0: +1 pts (609s)
+    WB TDL-B fD=600: +1 pts (735s)
+    WB TDL-B fD=1000: +2 pts (899s)
+    WB TDL-C fD=0: +1 pts (968s)
+    WB TDL-C fD=600: +2 pts (1141s)
+    WB TDL-C fD=1000: +2 pts (1321s)
+    WB TDL-D fD=600: +1 pts (1416s)
+    WB TDL-D fD=1000: +2 pts (1547s)
+WB: merged

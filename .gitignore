@@ -10,10 +10,24 @@ report/
 report_restored_*/
 otfs_papers/
 
-# results/ — ignore everything by default (BER JSONs, figure PNGs, etc.)
-# but commit the report-grade eval digests so anyone cloning the repo can
-# reproduce the report's figures with `python plot_results.py` (no need to
-# re-run the 9-17 hour NMC=200 sweep).
+# internal history: superseded scripts, bring-up code, report patch trail
+archive/
+
+# third-party reference code and comparisons against it — not part of the release
+third_party/
+
+# ═══════════════════════════════════════════════════════════════
+# data/: current evaluation results ARE committed (final_NB/WB.json,
+# uncoded_ref.json, awgn_fine.json, ablate_ofdm.json, tables/, logs/);
+# superseded intermediates and external-comparison logs are not.
+# ═══════════════════════════════════════════════════════════════
+data/legacy/
+data/logs/realistic_*.log
+data/logs/extend_deep.log
+
+# results/ — legacy April uncoded-suite outputs: ignore everything except
+# the report-grade digests kept for continuity with earlier releases
+# (their pipeline now lives in archive/legacy_uncoded/).
 results/*
 !results/otfs_eval_v1.json
 !results/figures/
@@ -30,13 +44,6 @@ REPORT_FINAL_PLAN.md
 RESTORATION_SUMMARY.md
 
 # ═══════════════════════════════════════════════════════════════
-# Pipeline scripts retained on disk but not committed
-# ═══════════════════════════════════════════════════════════════
-run_single.py
-run_fast.py
-run_all.sh
-
-# ═══════════════════════════════════════════════════════════════
 # Python caches
 # ═══════════════════════════════════════════════════════════════
 __pycache__/
@@ -50,6 +57,9 @@ __pycache__/
 # ═══════════════════════════════════════════════════════════════
 *.aux
 *.log
+!data/logs/*.log
+data/logs/realistic_*.log
+data/logs/extend_deep.log
 *.out
 *.toc
 *.synctex.gz

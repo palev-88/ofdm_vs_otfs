@@ -1,0 +1,722 @@
+{
+ "NB|AWGN|0|0|OFDM": {
+  "ber": 0.22082074959261272,
+  "bler": 1.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|0|PCP-guard": {
+  "ber": 0.2001406844106464,
+  "bler": 1.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|0|PCP-orig": {
+  "ber": 0.20499388919065725,
+  "bler": 1.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|0.2|OFDM": {
+  "ber": 0.21230241716458448,
+  "bler": 1.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|0.2|PCP-guard": {
+  "ber": 0.190024443237371,
+  "bler": 1.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|0.2|PCP-orig": {
+  "ber": 0.1954858772406301,
+  "bler": 1.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|0.4|OFDM": {
+  "ber": 0.20335130363932646,
+  "bler": 1.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|0.4|PCP-guard": {
+  "ber": 0.17825285171102662,
+  "bler": 1.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|0.4|PCP-orig": {
+  "ber": 0.18457210755024442,
+  "bler": 1.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|0.6|OFDM": {
+  "ber": 0.19338647474198806,
+  "bler": 1.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|0.6|PCP-guard": {
+  "ber": 0.16286162411732755,
+  "bler": 1.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|0.6|PCP-orig": {
+  "ber": 0.17112045084193372,
+  "bler": 1.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|0.8|OFDM": {
+  "ber": 0.18253775122216187,
+  "bler": 1.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|0.8|PCP-guard": {
+  "ber": 0.14058623030961434,
+  "bler": 0.99525,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|0.8|PCP-orig": {
+  "ber": 0.15255920695274308,
+  "bler": 0.99925,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|1|OFDM": {
+  "ber": 0.16874293862031506,
+  "bler": 1.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|1|PCP-guard": {
+  "ber": 0.1017934546442151,
+  "bler": 0.9235,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|1|PCP-orig": {
+  "ber": 0.12102322107550244,
+  "bler": 0.96875,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|1.2|OFDM": {
+  "ber": 0.14916146116241175,
+  "bler": 0.996,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|1.2|PCP-guard": {
+  "ber": 0.05082658881042911,
+  "bler": 0.616,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|1.2|PCP-orig": {
+  "ber": 0.07308120586637697,
+  "bler": 0.7915,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|1.4|OFDM": {
+  "ber": 0.11849877783813145,
+  "bler": 0.95625,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|1.4|PCP-guard": {
+  "ber": 0.012385524171645845,
+  "bler": 0.21325,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|1.4|PCP-orig": {
+  "ber": 0.024064231395980445,
+  "bler": 0.371,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|1.6|OFDM": {
+  "ber": 0.07395301466594242,
+  "bler": 0.775,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|1.6|PCP-guard": {
+  "ber": 0.0014412004345464421,
+  "bler": 0.03175,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|1.6|PCP-orig": {
+  "ber": 0.004008962520369364,
+  "bler": 0.08225,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|1.8|OFDM": {
+  "ber": 0.030028245518739817,
+  "bler": 0.41575,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|1.8|PCP-guard": {
+  "ber": 1.8604019554589898e-05,
+  "bler": 0.001,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|1.8|PCP-orig": {
+  "ber": 0.00028164041281912003,
+  "bler": 0.005,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|2|OFDM": {
+  "ber": 0.007733432916892993,
+  "bler": 0.14675,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|2|PCP-guard": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|2|PCP-orig": {
+  "ber": 4.073872895165671e-07,
+  "bler": 0.00025,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|2.2|OFDM": {
+  "ber": 0.0017832699619771864,
+  "bler": 0.03925,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|2.2|PCP-guard": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|2.2|PCP-orig": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|2.4|OFDM": {
+  "ber": 0.00022107550244432374,
+  "bler": 0.00675,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|2.4|PCP-guard": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|2.4|PCP-orig": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|2.6|OFDM": {
+  "ber": 5.5133079847908744e-05,
+  "bler": 0.003,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|2.6|PCP-guard": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|2.6|PCP-orig": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|2.8|OFDM": {
+  "ber": 2.7159152634437807e-07,
+  "bler": 0.0005,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|2.8|PCP-guard": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|2.8|PCP-orig": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|3|OFDM": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|3|PCP-guard": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|3|PCP-orig": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|3.2|OFDM": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|3.2|PCP-guard": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|3.2|PCP-orig": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|3.4|OFDM": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|3.4|PCP-guard": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|3.4|PCP-orig": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|3.6|OFDM": {
+  "ber": 1.6295491580662683e-06,
+  "bler": 0.00025,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|3.6|PCP-guard": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|3.6|PCP-orig": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|3.8|OFDM": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|3.8|PCP-guard": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "NB|AWGN|0|3.8|PCP-orig": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 7364000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|0|OFDM": {
+  "ber": 0.19631166757270999,
+  "bler": 1.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|0|PCP-guard": {
+  "ber": 0.22476834737700463,
+  "bler": 1.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|0|PCP-orig": {
+  "ber": 0.2298644672465344,
+  "bler": 1.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|0.2|OFDM": {
+  "ber": 0.18838427561837456,
+  "bler": 1.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|0.2|PCP-guard": {
+  "ber": 0.2169544033704811,
+  "bler": 1.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|0.2|PCP-orig": {
+  "ber": 0.2219536219081272,
+  "bler": 1.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|0.4|OFDM": {
+  "ber": 0.18002357977711334,
+  "bler": 1.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|0.4|PCP-guard": {
+  "ber": 0.20868262435444415,
+  "bler": 1.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|0.4|PCP-orig": {
+  "ber": 0.2138800964936124,
+  "bler": 1.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|0.6|OFDM": {
+  "ber": 0.1706119189997282,
+  "bler": 1.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|0.6|PCP-guard": {
+  "ber": 0.200423110899701,
+  "bler": 1.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|0.6|PCP-orig": {
+  "ber": 0.2056731448763251,
+  "bler": 1.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|0.8|OFDM": {
+  "ber": 0.1599143109540636,
+  "bler": 1.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|0.8|PCP-guard": {
+  "ber": 0.1912695365588475,
+  "bler": 1.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|0.8|PCP-orig": {
+  "ber": 0.19712231584669748,
+  "bler": 1.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|1|OFDM": {
+  "ber": 0.14649007882576787,
+  "bler": 1.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|1|PCP-guard": {
+  "ber": 0.1819176406632237,
+  "bler": 1.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|1|PCP-orig": {
+  "ber": 0.1879618782277793,
+  "bler": 1.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|1.2|OFDM": {
+  "ber": 0.129346221799402,
+  "bler": 1.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|1.2|PCP-guard": {
+  "ber": 0.17138845474313671,
+  "bler": 1.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|1.2|PCP-orig": {
+  "ber": 0.17807637945093777,
+  "bler": 1.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|1.4|OFDM": {
+  "ber": 0.10209207665126394,
+  "bler": 0.9995,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|1.4|PCP-guard": {
+  "ber": 0.15915021065506932,
+  "bler": 1.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|1.4|PCP-orig": {
+  "ber": 0.16640153574340855,
+  "bler": 1.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|1.6|OFDM": {
+  "ber": 0.05148270589834194,
+  "bler": 0.90025,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|1.6|PCP-guard": {
+  "ber": 0.14442511552052187,
+  "bler": 1.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|1.6|PCP-orig": {
+  "ber": 0.15338702772492524,
+  "bler": 1.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|1.8|OFDM": {
+  "ber": 0.00922312449035064,
+  "bler": 0.349,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|1.8|PCP-guard": {
+  "ber": 0.12396289752650176,
+  "bler": 0.99975,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|1.8|PCP-orig": {
+  "ber": 0.13627921989671107,
+  "bler": 1.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|2|OFDM": {
+  "ber": 0.000205694482196249,
+  "bler": 0.01875,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|2|PCP-guard": {
+  "ber": 0.08882223430279967,
+  "bler": 0.97925,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|2|PCP-orig": {
+  "ber": 0.11040085621092688,
+  "bler": 0.99675,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|2.2|OFDM": {
+  "ber": 3.7374286490894266e-07,
+  "bler": 0.00025,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|2.2|PCP-guard": {
+  "ber": 0.03957430687686871,
+  "bler": 0.743,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|2.2|PCP-orig": {
+  "ber": 0.06827021609132916,
+  "bler": 0.91975,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|2.4|OFDM": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|2.4|PCP-guard": {
+  "ber": 0.007578927697743952,
+  "bler": 0.26025,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|2.4|PCP-orig": {
+  "ber": 0.024092382440880675,
+  "bler": 0.559,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|2.6|OFDM": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|2.6|PCP-guard": {
+  "ber": 0.0006386246262571351,
+  "bler": 0.02975,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|2.6|PCP-orig": {
+  "ber": 0.0034954471323729273,
+  "bler": 0.1385,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|2.8|OFDM": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|2.8|PCP-guard": {
+  "ber": 1.2605327534656156e-05,
+  "bler": 0.00025,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|2.8|PCP-orig": {
+  "ber": 0.00013828486001630878,
+  "bler": 0.00925,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|3|OFDM": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|3|PCP-guard": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|3|PCP-orig": {
+  "ber": 9.513454743136722e-07,
+  "bler": 0.0005,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|3.2|OFDM": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|3.2|PCP-guard": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|3.2|PCP-orig": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|3.4|OFDM": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|3.4|PCP-guard": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|3.4|PCP-orig": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|3.6|OFDM": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|3.6|PCP-guard": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|3.6|PCP-orig": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|3.8|OFDM": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|3.8|PCP-guard": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 29432000,
+  "blocks": 4000
+ },
+ "WB|AWGN|0|3.8|PCP-orig": {
+  "ber": 0.0,
+  "bler": 0.0,
+  "bits": 29432000,
+  "blocks": 4000
+ }
+}

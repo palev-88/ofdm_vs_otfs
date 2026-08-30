@@ -1,0 +1,11 @@
+
+==========================================================================
+NB: OFDM estimator ablation (n_common=1841, 260 frames/point)
+==========================================================================
+  TDL-A  fD=    0 | A base=13.39 B +CIR=12.21 C +resid=12.00 D +eps2=12.00 | gains: +CIR:+1.17 +resid:+0.21 +eps2:+0.00 | total:+1.39  (35s)
+  TDL-A  fD= 1000 | A base=21.31 B +CIR=20.00 C +resid= 9.81 D +eps2=10.00 | gains: +CIR:+1.31 +resid:+10.19 +eps2:-0.19 | total:+11.31  (44s)
+  TDL-C  fD=    0 | A base= 9.23 B +CIR= 7.81 C +resid= 7.39 D +eps2= 7.63 | gains: +CIR:+1.43 +resid:+0.42 +eps2:-0.24 | total:+1.61  (31s)
+  TDL-C  fD= 1000 | A base=17.31 B +CIR=18.98 C +resid= 7.81 D +eps2= 8.08 | gains: +CIR:-1.67 +resid:+11.18 +eps2:-0.27 | total:+9.23  (48s)
+  TDL-D  fD= 1000 | A base= 8.34 B +CIR= 6.60 C +resid= 6.17 D +eps2= 6.37 | gains: +CIR:+1.73 +resid:+0.44 +eps2:-0.20 | total:+1.97  (34s)
+
+wrote ablate_ofdm.json
